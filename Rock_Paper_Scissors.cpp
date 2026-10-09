@@ -10,10 +10,14 @@ int main() {
   srand(time(NULL));
   int computer = rand() % 3 + 1;
   int user = 0;
-
+  char userInput;
   std::cout << "====================\n";
   std::cout << "Rock Paper Scissors!\n";
   std::cout << "====================\n";
+  std::cout << "Type C to play: ";
+  std::cin >> userInput;
+while (userInput == 'C' || userInput == 'c') {
+
 
   std::cout << "1) ✊\n";
   std::cout << "2) 🖐\n";
@@ -66,7 +70,7 @@ int main() {
     std::cout << "\nYou lost! You have no valentine and you lost... idk what to say atp\n";
   }
   else if (user == 2 && computer == 1) {
-    std::cout << "\nYou won! but do you even have a girlfriend though?... \nno wonder you here playing Rock Paper Scissors with Computer :D\n";
+    std::cout << "\nYou won! but do you even have a girlfriend though?... \nNo wonder you here playing Rock Paper Scissors with Computer :D\n";
   }
   
   else if (user == 3 && computer == 1) {
@@ -75,7 +79,17 @@ int main() {
   else if (user == 3 && computer == 2) {
     std::cout << "\nYou won! I doubt you even have someone to celebrate this won though :v\n";
   }
-
+  std::cout << "\nWant to play again? Type C to play or X to quit: ";
+  std::cin >> userInput;
+  
+  if (userInput == 'X' || userInput == 'x') {
+    std::cout << "Thanks for playing!\n";
+    break;
+  }
+  else if (userInput == 'C' || userInput == 'c') {
+    std::cout << "\nI guess we are playing again lol :)\n\n";
+  }
+}
   return 0;
 
 
