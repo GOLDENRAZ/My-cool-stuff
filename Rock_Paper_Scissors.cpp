@@ -79,6 +79,7 @@ while (userInput == 'C' || userInput == 'c') {
   else if (user == 3 && computer == 2) {
     std::cout << "\nYou won! I doubt you even have someone to celebrate this won though :v\n";
   }
+  
   std::cout << "\nWant to play again? Type C to play or X to quit: ";
   std::cin >> userInput;
   
