@@ -9,7 +9,7 @@
  ======================
  Using gcc via Cygwin:
  
- Type: gcc AndreasKasoa_EE1311_HW3b.c
+ Type: gcc primenumber.c
  Run the program with ./a.out.
  Program will display banner.
  Enter C or c to check a number, then enter a positive integer.
