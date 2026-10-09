@@ -17,6 +17,10 @@ int main () {
     cout << "The Art of Approaching Girl \n";
     cout << "===========================\n";
     start:
+    cout << "Type C to play: ";
+    cin >> userInput;
+
+    while (userInput == 'C' || userInput == 'c') {
     cout << "There are absolutely several ways in order to approaching a girl you like. However, it takes confidence and absolute courage to accomplish it. \n\n";
     cout << "Let us begin. You're sitting in your favorite coffee shop, you see from next to your table, a...\n";
     cout << "   A. Blonde girl\n";
@@ -104,5 +108,12 @@ int main () {
         this_thread::sleep_for(std::chrono::seconds(1));
         goto start2;
     }
-
+    if (userInput == 'X' || userInput == 'x') {
+        cout << "Thanks for playing!\n";
+        break;
+    }
+    else if (userInput == 'C' || userInput == 'c') {
+        cout << "\nI guess we are playing again lol :)\n\n";
+    }
+}
 }
