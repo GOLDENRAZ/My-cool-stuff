@@ -1,9 +1,4 @@
 /*
- Andreas Kasoa
- October 9, 2026
- Homework 3
- EE-1311-001
- 
  Prime Number Checker:
  Determine whether a positive integer entered by the user is prime or not.
  ======================
